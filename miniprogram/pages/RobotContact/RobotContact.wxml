@@ -1,0 +1,15 @@
+<!--pages/RobotContact/RobotContact.wxml-->
+<view class="objBox">
+
+</view>
+<view class="controlBox">
+<view class="wsBox">
+  <input value="ws_url" />
+  <button>连接</button>
+  <button>订阅</button>
+</view>
+<view class="modeBox">
+  <button>对话模式</button>
+  <button>指令模式</button>
+</view>
+</view>
