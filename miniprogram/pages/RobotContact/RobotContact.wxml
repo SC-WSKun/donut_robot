@@ -5,11 +5,11 @@
 <view class="controlBox">
 <view class="wsBox">
   <input value="ws_url" />
-  <button>连接</button>
-  <button>订阅</button>
+  <button style="background-image: url(../../asset/images/button.png); background-size: 100% 100%;">连接</button>
+  <button style="background-image: url(../../asset/images/button.png); background-size: 100% 100%;">订阅</button>
 </view>
 <view class="modeBox">
-  <button>对话模式</button>
-  <button>指令模式</button>
+  <button style="background-image: url(../../asset/images/button.png); background-size: 100% 100%;">对话模式</button>
+  <button style="background-image: url(../../asset/images/button.png); background-size: 100% 100%;">指令模式</button>
 </view>
 </view>
