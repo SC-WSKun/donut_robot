@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "mp-icon":"weui-miniprogram/icon/icon"
+    "navigation-bar": "/components/navigation-bar/navigation-bar"
   }
 }
