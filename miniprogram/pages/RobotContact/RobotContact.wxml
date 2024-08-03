@@ -1,15 +1,17 @@
 <!--pages/RobotContact/RobotContact.wxml-->
-<view style="height:calc(100vh - 20rpx); background-image: url(../../asset/images/background.png); background-size: 100% 100%;">
+<view style="height:calc(100vh - 20rpx); background-image: url(https://kunkun-project-image.oss-cn-guangzhou.aliyuncs.com/img/background.png); background-size: 100% 100%;">
   <navigation-bar title="Robot Assistant" back="{{false}}" color="white" background="#2059B6"></navigation-bar>
   <view class="objBox">
-
+    <view style="position:relative;height: 100%; width: 100%;overflow: hidden;" bindtouchstart="documentTouchStart" bindtouchmove="documentTouchMove" bindtouchend="documentTouchEnd">
+      <canvas type="webgl" id="c" style="height: 100%;width: 100%;" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" bindtouchcancel="touchCancel" bindlongtap="longTap" bindtap="tap"></canvas>
+    </view>
   </view>
   <view class="controlBox">
     <view class="wsBox">
-    <view class="inputBox techBorder">
-      <label>ip:</label>
-      <input value="{{ws_url}}" />
-    </view>
+      <view class="inputBox techBorder">
+        <label>IP:</label>
+        <input value="{{ws_url}}" />
+      </view>
       <view class="myButton techBorder">连接</view>
       <view class="myButton techBorder">订阅</view>
     </view>
