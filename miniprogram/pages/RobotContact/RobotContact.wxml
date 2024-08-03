@@ -1,21 +1,21 @@
 <!--pages/RobotContact/RobotContact.wxml-->
 <view style="height:calc(100vh - 20rpx); background-image: url(../../asset/images/background.png); background-size: 100% 100%;">
-  <navigation-bar title="Robot Assistant" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+  <navigation-bar title="Robot Assistant" back="{{false}}" color="white" background="#2059B6"></navigation-bar>
   <view class="objBox">
 
   </view>
   <view class="controlBox">
     <view class="wsBox">
-    <view class="inputBox" style="background-image: url(../../asset/images/button.png); background-size: 100% 100%;">
-      <label>ws url:</label>
+    <view class="inputBox techBorder">
+      <label>ip:</label>
       <input value="{{ws_url}}" />
     </view>
-      <view class="myButton" style="background-image: url(../../asset/images/button.png); background-size: 100% 100%;">连接</view>
-      <view class="myButton" style="background-image: url(../../asset/images/button.png); background-size: 100% 100%;">订阅</view>
+      <view class="myButton techBorder">连接</view>
+      <view class="myButton techBorder">订阅</view>
     </view>
     <view class="modeBox">
-      <view class="myButton" style="background-image: url(../../asset/images/button.png); background-size: 100% 100%;">对话模式</view>
-      <view class="myButton" style="background-image: url(../../asset/images/button.png); background-size: 100% 100%;">指令模式</view>
+      <view class="myButton techBorder">对话模式</view>
+      <view class="myButton techBorder">指令模式</view>
     </view>
   </view>
 </view>
