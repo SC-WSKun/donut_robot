@@ -6,18 +6,5 @@
       <canvas type="webgl" id="c" style="height: 100%;width: 100%;" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" bindtouchcancel="touchCancel" bindlongtap="longTap" bindtap="tap"></canvas>
     </view>
   </view>
-  <view class="controlBox">
-    <view class="wsBox">
-      <view class="inputBox techBorder">
-        <label>IP:</label>
-        <input value="{{ws_url}}" />
-      </view>
-      <view class="myButton techBorder">连接</view>
-      <view class="myButton techBorder">订阅</view>
-    </view>
-    <view class="modeBox">
-      <view class="myButton techBorder">对话模式</view>
-      <view class="myButton techBorder">指令模式</view>
-    </view>
-  </view>
+  <robot-control></robot-control>
 </view>

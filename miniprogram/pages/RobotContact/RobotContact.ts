@@ -47,11 +47,11 @@ Page({
         // renderer.setPixelRatio(wx.getSystemInfoSync().pixelRatio);
         // renderer.setSize(canvas.width, canvas.height);
 
-        function onWindowResize() {
-          camera.aspect = window.innerWidth / window.innerHeight;
-          camera.updateProjectionMatrix();
-          renderer.setSize(canvas.width, canvas.height);
-        }
+        // function onWindowResize() {
+        //   camera.aspect = window.innerWidth / window.innerHeight;
+        //   camera.updateProjectionMatrix();
+        //   renderer.setSize(canvas.width, canvas.height);
+        // }
         function render() {
           canvas.requestAnimationFrame(render);
           // mesh.rotation.x += 0.005;
@@ -65,28 +65,6 @@ Page({
 
   },
 
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
   /**
    * 生命周期函数--监听页面卸载
    */
@@ -95,7 +73,7 @@ Page({
   },
 
   touchStart(e: any) {
-    console.log('canvas', e)
+    // console.log('canvas', e)
     THREE.global.touchEventHandlerFactory('canvas', 'touchstart')(e)
   },
   touchMove(e: any) {
@@ -103,7 +81,7 @@ Page({
     THREE.global.touchEventHandlerFactory('canvas', 'touchmove')(e)
   },
   touchEnd(e: any) {
-    console.log('canvas', e)
+    // console.log('canvas', e)
     THREE.global.touchEventHandlerFactory('canvas', 'touchend')(e)
   },
 })
