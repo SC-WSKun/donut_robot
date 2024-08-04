@@ -16,7 +16,7 @@ import {
 	Vector2,
 	Vector3,
 	global as window
-} from "./three.weapp.min.js";
+} from "../../libs/three.weapp.min.js";
 
 // This set of controls performs orbiting, dollying (zooming), and panning.
 // Unlike TrackballControls, it maintains the "up" direction object.up (+Y by default).
