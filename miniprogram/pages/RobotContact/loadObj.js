@@ -1,12 +1,10 @@
-
-import getDDSLoader from '../../asset/jsm/loaders/DDSLoader.js';
 import getMTLLoader from '../../asset/jsm/loaders/MTLLoader.js';
 import getOBJLoader from '../../asset/jsm/loaders/OBJLoader.js';
 import { OrbitControls } from '../../asset/jsm/controls/OrbitControls';
 import objConfig from './obj.config.js'
 
 export default function (canvas, THREE) {
-  let { DDSLoader } = getDDSLoader(THREE);
+  // let { DDSLoader } = getDDSLoader(THREE);
   let { MTLLoader } = getMTLLoader(THREE);
   let OBJLoader = getOBJLoader(THREE);
   let window = THREE.global;
@@ -68,7 +66,6 @@ export default function (canvas, THREE) {
     // material
     let materialLoader = new MTLLoader(manager)
     let material = materialLoader.load(objConfig.mtl_url, (material) => {
-      console.log("material:", material)
       material.preload();
 
       // load obj
@@ -77,7 +74,6 @@ export default function (canvas, THREE) {
       loader.load(objConfig.obj_url, function (obj) {
         obj.traverse((child) => {
           if (child.isMesh) {
-            console.log("child.material:",child.material)
             const material = child.material;
             // 针对混元大模型生成的OBJ模型的material进行优化
             if (material && material.name==="material_0") {
