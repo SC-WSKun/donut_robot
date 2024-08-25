@@ -1,6 +1,7 @@
 // pages/RobotContact/RobotContact.ts
 import * as THREE from '../../asset/libs/three.weapp.min.js'
 import loadObj from './loadObj'
+
 Page({
 
   /**
