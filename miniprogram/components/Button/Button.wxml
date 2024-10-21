@@ -1,0 +1,2 @@
+<!--components/Button/Button.wxml-->
+<view class="myButton techBorder" bindtap="clickButton">{{text}}</view>

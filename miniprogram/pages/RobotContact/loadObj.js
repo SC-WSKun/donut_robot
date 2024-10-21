@@ -52,7 +52,7 @@ export default function (canvas, THREE) {
 
     manager.onProgress = function (item, loaded, total) {
 
-      console.log(item, loaded, total);
+      // console.log(item, loaded, total);
 
     };
 

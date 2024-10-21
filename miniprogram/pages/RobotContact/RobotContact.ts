@@ -25,7 +25,6 @@ Page({
         })
         loadObj(canvas, THREE)
       })
-
   },
 
   /**
@@ -36,15 +35,14 @@ Page({
   },
 
   touchStart(e: any) {
-    // console.log('canvas', e)
     THREE.global.touchEventHandlerFactory('canvas', 'touchstart')(e)
   },
+
   touchMove(e: any) {
-    // console.log('canvas', e)
     THREE.global.touchEventHandlerFactory('canvas', 'touchmove')(e)
   },
+
   touchEnd(e: any) {
-    // console.log('canvas', e)
     THREE.global.touchEventHandlerFactory('canvas', 'touchend')(e)
   },
 })

@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/RobotContact/RobotContact",
     "pages/index/index",
+    "pages/RobotContact/RobotContact",
     "pages/logs/logs"
   ],
   "window": {

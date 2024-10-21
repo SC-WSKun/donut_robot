@@ -2,14 +2,18 @@
 <view class="controlBox">
   <view class="wsBox">
     <view class="inputBox techBorder">
-      <label>IP:</label>
-      <input value="{{ws_url}}" bindinput="" />
+      <label class="inputLabel">IP:</label>
+      <input class="inputText" value="{{ws_url}}" bindinput="" />
     </view>
-    <view class="myButton techBorder">连接</view>
+    <Button text="连接" bind:tapFunc="connectWebSocket"></Button>
+    <!-- <view class="myButton techBorder" bindtap="connectWebSocket">连接</view> -->
     <view class="myButton techBorder">订阅</view>
   </view>
-  <view class="modeBox">
-    <view class="myButton techBorder">对话模式</view>
+  <!-- <view class="modeBox">
+    <view class="myButton techBorder" bindtap="startRecognize">对话模式</view>
     <view class="myButton techBorder">指令模式</view>
+  </view> -->
+  <view>
+    <button type="primary" bindtap="startRecognize">开始录制</button>
   </view>
 </view>

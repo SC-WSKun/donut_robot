@@ -1,0 +1,2 @@
+<!--components/Icon/Icon.wxml-->
+<cover-image  class="icon" src="{{iconUrl}}"></cover-image>
